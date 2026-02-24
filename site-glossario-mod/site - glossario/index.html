@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glossário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="hero">
+    <h1>Glossário de termos técnicos da Ciência da Computação</h1>
+    <p>Tradução simples da linguagem da internet e da TI</p>
+    <p>Data de criação: 24 de fevereiro de 2026</p>
+  </header>
+
+  <main class="layout">
+    
+    <div class="conteudo">
+
+      <section>
+        <h2>Categorias</h2>
+        <div id="categorias" class="grid"></div>
+      </section>
+
+      <section>
+        <h2 id="titulo-termos"></h2>
+        <div id="termos" class="grid"></div>
+        <div id="paginacao" class="paginacao"></div>
+      </section>
+
+    </div>
+
+    <aside id="sidebar-populares" class="populares">
+      <h3>Termos Populares</h3>
+      <div id="lista-populares"></div>
+    </aside>
+
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal">✕</button>
+
+      <h2 id="modalTitulo"></h2>
+
+      <div class="box">
+        <strong>O que é</strong>
+        <p id="modalDescricao"></p>
+      </div>
+
+      <div class="box highlight">
+        <strong>Em português claro</strong>
+        <p id="modalSimples"></p>
+      </div>
+
+      <div class="box">
+        <strong>Exemplo</strong>
+        <p id="modalExemplo"></p>
+      </div>
+      
+      <div class="box">
+        <p><strong>Fonte:</strong></p>
+        <p id="modalFonte"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
